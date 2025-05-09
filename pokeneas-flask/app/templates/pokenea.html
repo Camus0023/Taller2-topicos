@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokenea Aleatoria</title>
+  <!-- Opcional: si usas TailwindCSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- O bien tu propio CSS -->
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f3f4f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 24px;
+      max-width: 360px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .phrase {
+      font-style: italic;
+      color: #374151;
+      margin-bottom: 12px;
+    }
+    .container-id {
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="text-2xl font-bold mb-4">¡Pokenea Aleatoria!</h1>
+    <img src="{{ imagen_url }}" alt="Imagen de Pokenea">
+    <p class="phrase">"{{ frase }}"</p>
+    <p class="container-id">Container ID: {{ container_id }}</p>
+  </div>
+</body>
+</html>
